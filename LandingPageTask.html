@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-Task</title>
+    <link rel="icon" type="x-icon" href="favicon.jpg">
+
+
+</head>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.main-sub1{
+
+display: flex;
+flex-direction: row;
+background-color: black;
+color: white;
+padding: 10px;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.main-sub1 h6 a{
+color: white;
+}
+
+.main-sub1 h5{
+position: absolute;
+right: 75px;
+bottom: 8px;
+cursor: pointer;
+}
+
+
+
+.main-sub2{
+width: 100%;
+padding: 20px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+background-color: white;
+position: relative;
+
+}
+
+#shop{
+width: 15%;
+font-size: 25px;
+font-weight: bolder;
+transform: scale(1.1);
+display: flex;
+justify-content: flex-end;
+/* position: absolute;
+left: 100px; */
+}
+
+.nav_menu{
+width: 66%;
+/* background-color: palevioletred; */
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 30px;
+}
+
+.nav_menu-ol{
+/* background-color: antiquewhite; */
+width: 40%;
+display: flex;
+list-style: none;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.nav_menu ol li a{
+text-decoration: none;
+color: black;
+}
+
+input[type="text"]{
+background-color:rgb(223, 222, 222);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding: 10px;
+width: 53%;
+border-radius: 20px;
+border: none;
+outline: none;
+}
+
+
+
+.user_menu {
+display: flex;
+/* background-color: black; */
+gap: 10px;
+position: absolute;
+right: 110px;
+
+}
+.user_menu img{
+display: flex;
+width: 20px;
+cursor: pointer;
+}
+
+
+
+
+.body_content{
+    display: flex;
+    width: 100%;
+    background-color:  rgb(242, 240, 241);
+    height: 80vh;
+}
+
+.body-sub1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+}
+
+.body-sub1-h6{
+    width: 76%;
+    height: 150px;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    padding: 40px 90px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.body-sub1 p{
+    width: 82.5%;
+    padding-left: 85px;
+}
+
+.body-sub1-div{
+    width: 20%;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    left: 80px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.percenatge{
+    margin-top: 30px;   
+}
+
+.percenatge-head{
+    justify-content: flex-end;
+    align-items: center;
+    gap: 110px;
+    display: flex;
+    /* background-color: red; */
+    list-style: none;
+    font-size: 45px;
+    /* font-weight: bolder; */
+    width: 87%;
+}
+
+.percenatge-data{
+    /* background-color: cadetblue; */
+    DISPLAY: FLEX;
+    justify-content: c;
+    list-style: none;
+    /* justify-content: space-between; */
+    width: 76%;
+    padding-top: 10px;
+    padding-left: 85px;
+    gap: 39px;
+}
+
+.body-sub2{
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+#star1{
+    width: 6%;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    bottom: 230px;
+    left: 130px;
+
+}
+#star2{
+    display: flex;
+    position: absolute;
+    width: 10%;
+    height: 70px;
+    left: 500px;
+    top: 55px;
+}
+
+.body2{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    border-top: 2px solid blue;
+}
+
+.body2-sub1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.body2-sub1 ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 60px;
+}
+.body2-sub1 ul li h6{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.body2-sub1 ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body2-sub1 ul li img{
+    display: flex;
+    width: 70%;
+}
+
+
+.new-items{
+    height: 2000px;
+    background: repeating-linear-gradient(
+                to right, 
+                #fff, 
+                #fff 50px, 
+                #ffebeb 50px, 
+                #ffebeb 100px
+            );
+    width: 100%;
+}
+
+
+.arrival{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrival div{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.design-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.design-parent-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+   
+}
+
+.design-parent-li{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+   
+}
+
+.div-img{
+    
+    display: flex;
+    width: 200px;
+    border: 1.8px solid rgba(255, 192, 203, 0.3);
+    border-radius: 14px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-parent-img{
+    display: flex;
+    width: 180px;
+    height: 200px;
+}
+
+#last-img{
+    display: flex;
+    width: 160px;
+    height: 180px;
+}
+
+.price{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ 
+.mainsub{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: blueviolet; */
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+.sub1{
+    /* background-color: yellow; */
+    display: flex;
+    color: black;
+}
+
+.sub2{
+    display: flex;
+    margin-left: 77px;
+    /* background-color: cadetblue; */
+
+}
+.sub3{
+    display: flex;
+    margin-left: 127px;
+    /* background-color: blue; */
+
+}
+.sub4{
+    display: flex;
+    /* background-color: red; */
+    margin-left: 133px;
+}
+
+.mainsub ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.view{
+margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view input[type="button"]{
+    line-height: 7px;
+    /* text-align: center; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: black;
+    width: 17%;
+    height: 51px;
+    padding: 22px;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+.view input[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgb(20, 20, 227);
+    color: white;
+    border: none;
+}
+
+.bold-li{
+    font-weight: 900;
+}
+
+.li-grey{
+    color: #b7b4b4;
+    padding-left: 5px;
+}
+
+.li-red{
+    color: red;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+    background-color: rgb(237 174 174);
+    border-radius: 10px;
+}
+
+#selling{
+    text-transform: uppercase;
+    margin: 40px 0px;
+}
+
+.broswe_by_dress{
+    width: 80%;
+    border-radius: 10px;
+    background: repeating-linear-gradient(to right, #fff, #fff 50px, #ffebeb 50px, #ffebeb 100px);
+    border: 1.8px solid rgba(255, 192, 203, 0.3);
+    margin-top: 20px;
+    margin-left: 98.5px;
+}
+
+.dress-style{
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 30px;
+}
+
+.dress-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dress-code ul{
+    display: flex;
+}
+
+.dress-code ul li{
+    display: flex;
+    border: 1.8px solid rgba(255, 192, 203, 0.3);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.dress-code ul li span{
+    display: flex;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.dress-code ul img{
+    width: 50%;
+    /* background-color: #b7b4b4; */
+
+}
+
+
+.dress-code-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dress-code-two ul{
+    display: flex;
+    margin: 5px;
+    margin-left: 20%;
+}
+
+.dress-code-two ul li{
+    display: flex;
+    border: 1.8px solid rgba(255, 192, 203, 0.3);
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 45%;
+    height: 50%;
+}
+
+.dress-code-two ul li span{
+    display: flex;
+    padding: 5px;
+    font-weight: 600;
+}
+
+
+#gym{
+    display: flex;
+    width: 50%;
+}
+
+
+
+
+footer{
+    border-top: 2px solid blue;
+    width: 100%;
+    height: 300px;
+}
+
+.sub-1{
+    width: 100%;
+    height: 80px;
+    background-color:  rgb(38, 194, 129);
+    color: white;
+    display: flex;
+}
+
+.sub-1-left{
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.sub-1-right{
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sub-1-right img {
+    display: flex;
+    width: 3.5%;
+    border-radius: 10px;
+}
+
+.sub-1-right div{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.sub-1-right-logo{
+    display: flex;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+
+#linkedin{
+    
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    color: rgb(38, 194, 129);
+    width: 19px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sub-2{
+    padding: 35px 25px 25px 25px;
+    /* width: 100%; */
+    background-color: rgb(246, 239, 239);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.sub-2-company{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.sub-2-company p {
+    line-height: 20px;
+}
+
+.span-sub-topic{
+    margin-bottom: 20px;
+ text-transform: uppercase;
+ font-weight: 700;
+ /* border-bottom: 2px solid rgb(49, 18, 49);    */
+}
+.span-sub-topic::before{
+    width: 5%;
+    border-bottom: 2px solid rgb(138, 42, 138);
+    position: absolute;
+    height: 20px;
+    content: "";
+    padding: 2px;
+}
+
+.sub-2-products{
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.sub-2-products ul{
+    list-style: none;
+}
+
+.sub-2-links{
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.sub-2-links ul{
+    list-style: none;
+}
+
+.sub-2-contact{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.sub-2-contact ul{
+    list-style: none;
+}
+
+.ul-height{
+    line-height: 30px;
+}
+
+.ul-li-height{
+    line-height: 30px;
+
+}
+
+.ul-li-height li{
+    display: flex;
+    align-items: center;
+}
+
+.ul-li-height li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: rgb(246, 239, 239);
+    border-radius: 5px;
+    /* border: 2px solid rgb(246, 239, 239);; */
+}
+
+.sub-2-copy{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#go-to-top{
+    position: sticky;
+    top: 20px;
+    left: 1100px;
+    width: 6.5%;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: system-ui;
+    height: 65.5px;
+    color: black;
+    display: none !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  2px solid black;
+}
+
+#go-to-top:hover{
+    border: none;
+    color: white;
+    background-color: maroon;
+}
+
+body{
+    position: relative;
+}
+
+
+</style>
+
+
+<script>
+
+    var top = document.getElementById('go-to-top');
+
+    top.addEventListener('scroll',()=> {
+
+        if (window.scrollY>8) {
+
+            console.log(top.getComputedStyle);
+            
+            top.getComputedStyle=="none" ?style.display="display": ""
+            // style.display="none"; 
+        } 
+        else {
+            // top.style.display ="none";
+        }
+    });
+
+    
+
+</script>
+
+
+
+<body>
+
+    <header class="main">
+ 
+        <div class="main-sub1">
+
+            <h6>Sign up and get 20% off to your first order.&ThinSpace;
+                
+            <a id="sign_up" href="#">Sign Up Now</a> </h6>
+                        
+            <h5 >X</h5>
+        </div>
+
+        <div class="main-sub2">
+
+            <div id="shop">SHOP.CO</div>
+
+            <nav class="nav_menu">
+
+                    <ol class="nav_menu-ol">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                    </ol>
+                    <input type="text" placeholder="Search for products...">
+            </nav>
+
+            <div class="user_menu">
+                
+                <img src="carticon.png" alt="carticon">
+                <img src="usericon.png" alt="usericon">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="body_content">    
+
+    <div class="body-sub1" >
+        
+        <h6 class="body-sub1-h6">Find Clothes That Matches Your Style</h6>
+        <p>Browse through your diverse range of meticulously crafted garments&comma; designed to bring
+            out your individually and cater to your sense of style.
+        </p>
+
+        <div class="body-sub1-div" onclick="validate()"> Shop Now</div>
+
+        <div class="percenatge">
+
+            <ul class="percenatge-head">
+            <li><h6>200+</h6></li>
+            <li><h6>2,000+</h6></li>
+            <li><h6>30,000+</h6></li>
+            </ul>
+
+            <ul class="percenatge-data">
+            <li>International Brands</li>
+            <li>High-Quality Products</li>
+            <li>Happy Customers</li>
+            </ul>
+
+    </div>
+
+    </div>
+
+    
+    
+    <div class="body-sub2">
+        <img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\HTML CSS JS\task-2\task-2\Rectangle 21.png" alt="Rectangle">
+   
+        <img id="star1" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\HTML CSS JS\task-2\task-2\Vector-1.png" alt="stars">
+        <img id="star2" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\HTML CSS JS\task-2\task-2\Vector.png" alt="stars">
+    </div>
+
+    </div>
+
+    <div class="body2">
+        <div class="body2-sub1">
+            <ul>
+                <li><h6>versace</h6></li>
+                <li> <img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-2\task-2\zara-logo-1 1.png" alt=""></li>
+                <li><img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-2\task-2\gucci-logo-1 1.png" alt=""></li>
+                <li><img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-2\task-2\prada-logo-1 1.png" alt=""></li>
+                <li><img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-2\task-2\Group.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="new-items">
+
+    <div class="arrival">
+    <div >New Arrivals</div>
+    </div>
+
+    <div class="design-parent">
+    <ul class="design-parent-ul">
+        <li class="design-parent-li"><div class="div-img"><img class="design-parent-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\1st.png" alt="t-shirt"></div></li>
+        <li><div class="div-img"><img class="design-parent-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\2nd.png" alt="pant"></div></li>
+        <li><div class="div-img"><img class="design-parent-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\3rd.png" alt="shirt"></div></li>
+        <li><div class="div-img"><img id="last-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\4th.png" alt="t-shirt"></div></li>
+    </ul>
+
+    </div>
+
+    <div class="price">
+
+        <div class="mainsub">
+
+        <div class="sub1">
+            <ul>
+                <li class="bold-li">T-shirt with Tape Details</li>
+                <li>***** 4.5/5</li>
+                <li class="bold-li">$120</li>
+            </ul>
+        </div>
+
+        <div class="sub2">
+            <ul>
+                <li class="bold-li">Skinny Fit Jeans</li>
+                <li>*** 3.5/5</li>
+                <li class="bold-li">$240  <strike> <span class="li-grey">$260</span></strike> <sup><span class="li-red">20%</span></sup></li>
+            </ul>
+
+        </div>
+
+        <div class="sub3">
+            <ul>
+                <li class="bold-li">Checkered Shirt</li>
+                <li>***** 4.5/5</li>
+                <li class="bold-li">$180</li>
+            </ul>
+        </div>
+
+        <div class="sub4">
+            <ul>
+                <li class="bold-li">Sleeve Striped T-shirt</li>
+                <li>***** 4.5/5</li>
+                <li class="bold-li">$130 <strike><span class="li-grey">$160</span></strike> <sup> <span class="li-red">30%</span></sup></li>
+            </ul>
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="view">
+        <input type="button" value="view All">
+    </div>
+
+    <div class="arrival">
+        <div id="selling">Top Selling</div>
+        </div>
+    
+        <div class="design-parent">
+        <ul class="design-parent-ul">
+            <li class="design-parent-li"><div class="div-img"><img class="design-parent-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\1st.png" alt="t-shirt"></div></li>
+            <li><div class="div-img"><img class="design-parent-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\2nd.png" alt="pant"></div></li>
+            <li><div class="div-img"><img class="design-parent-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\3rd.png" alt="shirt"></div></li>
+            <li><div class="div-img"><img id="last-img" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\4th.png" alt="t-shirt"></div></li>
+        </ul>
+    
+        </div>
+    
+        <div class="price">
+    
+            <div class="mainsub">
+    
+            <div class="sub1">
+                <ul>
+                    <li class="bold-li">T-shirt with Tape Details</li>
+                    <li>***** 4.5/5</li>
+                    <li class="bold-li">$120</li>
+                </ul>
+            </div>
+    
+            <div class="sub2">
+                <ul>
+                    <li class="bold-li">Skinny Fit Jeans</li>
+                    <li>*** 3.5/5</li>
+                    <li class="bold-li">$240  <strike> <span class="li-grey">$260</span></strike> <sup><span class="li-red">20%</span></sup></li>
+                </ul>
+    
+            </div>
+    
+            <div class="sub3">
+                <ul>
+                    <li class="bold-li">Checkered Shirt</li>
+                    <li>***** 4.5/5</li>
+                    <li class="bold-li">$180</li>
+                </ul>
+            </div>
+    
+            <div class="sub4">
+                <ul>
+                    <li class="bold-li">Sleeve Striped T-shirt</li>
+                    <li>***** 4.5/5</li>
+                    <li class="bold-li">$130 <strike><span class="li-grey">$160</span></strike> <sup> <span class="li-red">30%</span></sup></li>
+                </ul>
+            </div>
+            
+        </div>
+        </div>
+    
+        <div class="view">
+            <input type="button" value="view All">
+        </div>
+
+
+        <div class="broswe_by_dress">
+
+            <div class="dress-style">Browse By Dress Style</div>
+
+            <div class="dress-code">
+                <ul>
+                    <li><span>Casual</span> <img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\box1.png" alt=""></li>
+                    <li><span>Formal</span><img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\box2.png" alt=""></li>
+                </ul>
+            </div>
+
+           <div class="dress-code-two">
+                <ul>
+                    <li><span>Party</span><img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\box3.png" alt=""></li>
+                    <li><span>Gym</span><img id="gym" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-3\box4.png" alt=""></li>
+                </ul>
+            </div>          
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="sub-1">
+            
+            <div class="sub-1-left">
+
+                Get connected with us on social networks:
+            </div>
+            
+
+            <div class="sub-1-right">
+            <div class="sub-1-right-logo">f</div>
+            <div class="sub-1-right-logo">G</div>
+            <div class="sub-1-right-logo" id="linkedin">in</div>
+            <img class="sub-1-right-logo" src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-4\git.png" 
+            alt="github-icon">
+            </div>
+            
+        </div>
+
+        <div class="sub-2">
+            
+            <div class="sub-2-company">
+
+                <span class="span-sub-topic">Company Name</span>
+
+                <p> Dash IT company , which is located in chennai , Sholinganallur most trusted and 
+                one of the developing company in chennai!!!
+                </p>
+
+            </div>
+
+            <div class="sub-2-products">
+
+                <span class="span-sub-topic">Products</span>
+
+                <ul class="ul-height">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>Js</li>
+                <li>React</li>
+                </ul>
+            </div>
+            
+            <div class="sub-2-links">
+
+                <span class="span-sub-topic">useful links</span>
+
+                <ul class="ul-height">
+                    <li>Your Account</li>
+                    <li>Became an AI</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+
+            <div class="sub-2-contact">
+                <span class="span-sub-topic">Contact</span>
+                <ul class="ul-li-height">
+                    <li >
+        <img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-4\home.png" 
+                        alt="">Chennai, Tamil Nadu, India</li>
+                    <li>
+        <img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-4\email.png" alt="">
+        info@sample.com</li>
+                    <li><img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-4\phone.png" 
+        alt="">+91 ***** *****</li>
+                    <li><img src="C:\Users\vicky\OneDrive\Documents\Front_end_training\task-4\fax.png" 
+        alt="">+91 ***** *****</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-2-copy">
+            &copy; 2024 Copyright: MDBootstrap.com
+        </div>
+
+        
+    </footer>
+
+    <div id="go-to-top">
+        ^
+    </div>
+
+
+</body>
+    
+
+
+</body>
+</html>
